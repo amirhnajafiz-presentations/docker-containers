@@ -2,6 +2,7 @@ package api
 
 import (
 	"fmt"
+	"io"
 	"io/ioutil"
 	"net/http"
 )
@@ -16,7 +17,10 @@ func Test() {
 
 	res, _ := http.DefaultClient.Do(req)
 
-	defer res.Body.Close()
+	defer func(Body io.ReadCloser) {
+		_ = Body.Close()
+	}(res.Body)
+
 	body, _ := ioutil.ReadAll(res.Body)
 
 	fmt.Println(res)
