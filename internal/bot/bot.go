@@ -6,7 +6,10 @@ import (
 	telBot "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
-func Test() {
+type Bot struct {
+}
+
+func (b Bot) Start() {
 	bot, err := telBot.NewBotAPI("MyAwesomeBotToken")
 	if err != nil {
 		log.Panic(err)
