@@ -7,10 +7,11 @@ import (
 )
 
 type Bot struct {
+	Token string
 }
 
 func (b Bot) Start() {
-	bot, err := telBot.NewBotAPI("MyAwesomeBotToken")
+	bot, err := telBot.NewBotAPI(b.Token)
 	if err != nil {
 		log.Panic(err)
 	}
