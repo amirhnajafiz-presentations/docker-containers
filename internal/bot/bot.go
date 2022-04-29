@@ -14,7 +14,6 @@ func New() (*telebot.Bot, error) {
 		return nil, err
 	}
 
-	// TODO: register handler
 	h := handler.Handler{}
 
 	b.Handle("/hello", h.Test)
