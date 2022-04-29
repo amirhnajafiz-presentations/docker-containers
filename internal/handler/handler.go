@@ -1,11 +1,13 @@
 package handler
 
-import "fmt"
+import (
+	"gopkg.in/telebot.v3"
+)
 
 type Handler struct {
 }
 
-func (h Handler) Test() {
+func (h Handler) Test(context telebot.Context) error {
 	// TODO: create a test route
-	fmt.Println("Hello")
+	return context.Send("Hello")
 }
