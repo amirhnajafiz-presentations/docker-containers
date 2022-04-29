@@ -1,15 +1,18 @@
 package bot
 
 import (
-	"os"
 	"time"
 
 	"gopkg.in/telebot.v3"
 )
 
-func Config() telebot.Settings {
+type Config struct {
+	Token string `koanf:"token"`
+}
+
+func LoadConfigs(cfg Config) telebot.Settings {
 	return telebot.Settings{
-		Token: os.Getenv("token"),
+		Token: cfg.Token,
 		Poller: &telebot.LongPoller{
 			Timeout: 10 * time.Second,
 		},

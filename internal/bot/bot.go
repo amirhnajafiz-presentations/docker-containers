@@ -9,7 +9,7 @@ type Bot struct {
 }
 
 func New() (*telebot.Bot, error) {
-	b, err := telebot.NewBot(Config())
+	b, err := telebot.NewBot(LoadConfigs(Config{}))
 	if err != nil {
 		return nil, err
 	}
