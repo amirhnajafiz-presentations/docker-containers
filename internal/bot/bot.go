@@ -14,7 +14,9 @@ func New() (*telebot.Bot, error) {
 		return nil, err
 	}
 
-	h := handler.Handler{}
+	h := handler.Handler{
+		Metric: handler.NewMetrics(),
+	}
 
 	b.Handle("/hello", h.Test)
 
