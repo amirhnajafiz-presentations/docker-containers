@@ -5,15 +5,14 @@ import (
 	"gopkg.in/telebot.v3"
 )
 
-type Bot struct {
-}
-
 func New(config Config) (*telebot.Bot, error) {
+	// load bot configs
 	b, err := telebot.NewBot(LoadConfigs(config))
 	if err != nil {
 		return nil, err
 	}
 
+	// create the handler
 	h := handler.Handler{
 		Metric: handler.NewMetrics(),
 	}
