@@ -2,13 +2,16 @@ package main
 
 import (
 	"github.com/amirhnajafiz/nba-bot/internal/bot"
+	"github.com/amirhnajafiz/nba-bot/internal/config"
 	"github.com/amirhnajafiz/nba-bot/internal/metric"
 )
 
 func main() {
-	metric.NewServer(metric.Config{}).Start()
+	cfg := config.Load()
 
-	b, err := bot.New()
+	metric.NewServer(cfg.Metric).Start()
+
+	b, err := bot.New(cfg.Bot)
 	if err != nil {
 		panic(err)
 	}

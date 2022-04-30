@@ -8,8 +8,8 @@ import (
 type Bot struct {
 }
 
-func New() (*telebot.Bot, error) {
-	b, err := telebot.NewBot(LoadConfigs(Config{}))
+func New(config Config) (*telebot.Bot, error) {
+	b, err := telebot.NewBot(LoadConfigs(config))
 	if err != nil {
 		return nil, err
 	}
