@@ -5,6 +5,7 @@ import (
 	"log"
 
 	"github.com/amirhnajafiz/nba-bot/internal/bot"
+	"github.com/amirhnajafiz/nba-bot/internal/metric"
 	"github.com/knadh/koanf"
 	"github.com/knadh/koanf/parsers/yaml"
 	"github.com/knadh/koanf/providers/file"
@@ -12,7 +13,8 @@ import (
 )
 
 type Config struct {
-	Bot bot.Config `koanf:"telegram"`
+	Bot    bot.Config    `koanf:"telegram"`
+	Metric metric.Config `koanf:"metric"`
 }
 
 func Load() Config {
