@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/amirhnajafiz/nba-bot/internal/bot"
 	"github.com/amirhnajafiz/nba-bot/internal/config"
 	"github.com/amirhnajafiz/nba-bot/internal/metric"
@@ -20,5 +22,6 @@ func main() {
 	}
 
 	// starting our bot
+	fmt.Println("Waiting for telegram bot to start ...")
 	b.Start()
 }

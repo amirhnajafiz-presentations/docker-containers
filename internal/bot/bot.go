@@ -1,6 +1,8 @@
 package bot
 
 import (
+	"fmt"
+
 	"github.com/amirhnajafiz/nba-bot/internal/handler"
 	"gopkg.in/telebot.v3"
 )
@@ -19,6 +21,8 @@ func New(config Config) (*telebot.Bot, error) {
 
 	b.Handle("/test", h.Test)
 	b.Handle("/view", h.Request)
+
+	fmt.Println("Bot started.")
 
 	return b, nil
 }
