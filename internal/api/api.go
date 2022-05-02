@@ -1,13 +1,12 @@
 package api
 
 import (
-	"fmt"
 	"io"
 	"io/ioutil"
 	"net/http"
 )
 
-func Test() {
+func MakeRequest() (*http.Response, string) {
 	url := "https://api-nba-v1.p.rapidapi.com/seasons"
 
 	req, _ := http.NewRequest("GET", url, nil)
@@ -23,6 +22,5 @@ func Test() {
 
 	body, _ := ioutil.ReadAll(res.Body)
 
-	fmt.Println(res)
-	fmt.Println(string(body))
+	return res, string(body)
 }
