@@ -17,7 +17,8 @@ func New(config Config) (*telebot.Bot, error) {
 		Metric: handler.NewMetrics(),
 	}
 
-	b.Handle("/hello", h.Test)
+	b.Handle("/test", h.Test)
+	b.Handle("/view", h.Request)
 
 	return b, nil
 }
