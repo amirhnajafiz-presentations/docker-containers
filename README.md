@@ -2,6 +2,10 @@
 
 This is a **Telegram** bot to get the latest NBA results.
 
+<p align="center">
+  <img src="https://miro.medium.com/max/1400/1*JUF8QTMUpJiKXMcM8EvvaQ.jpeg" width="600" alt="logo" />
+</p>
+
 ## How to run?
 To run the bot, first you need to create a bot in **Telegram**, then
 save your _bot api token_ somewhere.
