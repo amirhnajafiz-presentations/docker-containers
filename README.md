@@ -1,4 +1,5 @@
-# NBA Bot
+# Go Telegram Bot
+
 This is a **Telegram** bot to get the latest NBA results.
 
 ## How to run?
@@ -34,8 +35,8 @@ Bot started.
 ```
 
 ## Routes
-Now you can test the bot in telegram by the following endpoint:
+Now you can test the bot in telegram by the following command:
 - /test
 
-And for getting NBA results, use the following endpoint:
+And for getting NBA results, use the following commad:
 - /view
