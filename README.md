@@ -1,12 +1,15 @@
-# Go Telegram Bot
-
-This is a **Telegram** bot to get the latest NBA results.
-
 <p align="center">
-  <img src="https://miro.medium.com/max/1400/1*JUF8QTMUpJiKXMcM8EvvaQ.jpeg" width="600" alt="logo" />
+  <img src="https://miro.medium.com/max/1400/1*JUF8QTMUpJiKXMcM8EvvaQ.jpeg" width="300" alt="logo" />
 </p>
 
-## How to run?
+<h1 align="center">
+Go Telegram Bot
+</h1>
+
+This is a **Telegram** bot to get the latest NBA results. The idea behind this project is to
+work with telegram apis in golang.
+
+## How to run ths project?
 To run the bot, first you need to create a bot in **Telegram**, then
 save your _bot api token_ somewhere.
 
