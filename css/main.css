@@ -22,3 +22,8 @@ p {
 .green-highlight {
     color: seagreen !important;
 }
+
+.c-table {
+    margin-top: 80px !important;
+    font-size: 0.7em !important;
+}
