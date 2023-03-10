@@ -385,6 +385,28 @@ $ docker push amirhossein21/nginx:v0.1
 					<h3>
 						Docker Compose
 					</h3>
+					<p>
+						Docker Compose is a tool that was developed to help define and share multi-container 
+						applications. With Compose, we can create a YAML file to define the 
+						services and with a single command, can spin everything up or tear it all down.
+						Network, volume and etc.
+					</p>
+					<pre><code>
+version: "3.9"  # optional since v1.27.0
+services:
+	web:
+		build: .
+		ports:
+			- "8000:5000"
+		depends_on:
+			- redis
+	redis:
+		image: redis
+		volumes:
+		    - logvolume01:/data
+volumes:
+	logvolume01: {}
+					</code></pre>
 				</section>
 				<section>
 					<h3>
