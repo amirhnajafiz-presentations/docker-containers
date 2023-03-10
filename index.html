@@ -463,6 +463,16 @@ $ docker push amirhossein21/nginx:v0.1
 						services and with a single command, can spin everything up or tear it all down.
 						Network, volume and etc.
 					</p>
+				</section>
+				<section>
+					<h3>
+						Compose (cont.)
+					</h3>
+					<p>
+						Make a 
+						<span style="background-color: #fff; color: rgb(255, 75, 75); padding: 0 5px;">docker-compose.yml</span> 
+						file.
+					</p>
 					<pre><code>
 version: "3.9"  # optional since v1.27.0
 services:
@@ -478,6 +488,21 @@ services:
 		    - logvolume01:/data
 volumes:
 	logvolume01: {}
+					</code></pre>
+				</section>
+				<section>
+					<h3>
+						Compose (cont.)
+					</h3>
+					<p>
+						Docker Compose commands:
+					</p>
+					<pre><code>
+# start containers
+$ docker compose up -d
+
+# stop containers
+$ docker compose down
 					</code></pre>
 				</section>
 				<section>
