@@ -108,7 +108,7 @@
 						Containers: Architecture
 					</h3>
 					<p>
-						A containerized architecture makes it possible to package 
+						A <span class="green-highlight">containerized</span> architecture makes it possible to package 
 						software and its dependencies in an isolated unit, called a container, 
 						which can run consistently in any environment.
 					</p>
@@ -118,11 +118,28 @@
 					<h3>
 						Cgroup
 					</h3>
+					<p>
+						Cgroups (abbreviated from <span class="red-highlight">control groups</span>) 
+						is a Linux kernel feature that limits,
+						accounts for, and isolates the resource usage (CPU, memory, disk I/O, 
+						network, etc.) of a collection of processes.
+						Engineers at Google started the work on this feature in 2006 
+						under the name <span class="blue-highlight">process containers</span>.
+					</p>
 				</section>
 				<section>
 					<h3>
 						Namespace
 					</h3>
+					<p>
+						Namespaces are a feature of the Linux kernel that partitions kernel 
+						resources such that one set of processes <span class="red-highlight">
+						sees one set of resources while another</span>
+						set of processes sees a different set of resources.<br />
+						Namespaces provide isolation of system resources, and cgroups allow for 
+						<span class="blue-highlight">fine‑grained control and enforcement of limits for those resources</span>. 
+						Containers are not the only way that you can use namespaces and cgroups.
+					</p>
 				</section>
 				<section>
 					<h3>
@@ -197,6 +214,11 @@
 						<li>
 							<a href="https://www.aquasec.com/cloud-native-academy/container-security/containerized-architecture/#:~:text=What%20is%20a%20Containerized%20Architecture,run%20consistently%20in%20any%20environment.">
 								https://aquasec.com/cloud-native-academy
+							</a>
+						</li>
+						<li>
+							<a href="https://en.wikipedia.org/wiki/Cgroups#:~:text=cgroups%20(abbreviated%20from%20control%20groups,of%20a%20collection%20of%20processes.">
+								https://en.wikipedia.org/wiki/cgroups
 							</a>
 						</li>
 					</ul>

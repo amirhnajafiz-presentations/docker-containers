@@ -10,3 +10,15 @@ p {
     text-align: justify !important;
     font-size: 0.8em !important;
 }
+
+.blue-highlight {
+    color: cornflowerblue !important;
+}
+
+.red-highlight {
+    color: rgb(255, 97, 97) !important;
+}
+
+.green-highlight {
+    color: seagreen !important;
+}
