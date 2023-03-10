@@ -93,6 +93,19 @@
 					</ul>
 				</section>
 				<section>
+					<p>
+						The concept of containers was started way back in 1979 with UNIX chroot. 
+						It's an UNIX operating-system system call for changing the root directory of a 
+						process and it's children to a new location in the filesystem which is 
+						only visible to a given process.<br /><br />
+						The 2000s were alight with container technology development and refinement. 
+						Google introduced Borg, the organization's container cluster management system, in 2003. 
+						It relied on the isolation mechanisms that Linux already had in place.<br /><br />
+						Until 2004 that linux added the Cgropus and Namespaces which started a big 
+						evolution in containers industery.
+					</p>
+				</section>
+				<section>
 					<h3>
 						Containers: Isolation
 					</h3>
@@ -145,6 +158,26 @@
 					<h3>
 						RunC
 					</h3>
+					<p>
+						RunC is a CLI tool for spawning and running containers on Linux according to the OCI specification.
+						RunC is a universal container runtime created by Docker. View it on
+						<a href="https://github.com/opencontainers/runc">
+							Github
+						</a>.
+					</p>
+					<pre><code>
+# creating a new containers
+runc create mycontainerid
+
+# view the container is created and in the "created" state
+runc list
+
+# start the process inside the container
+runc start mycontainerid
+
+# now delete the container
+runc delete mycontainerid
+					</code></pre>
 				</section>
 				<section>
 					<h3>
