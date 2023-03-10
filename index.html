@@ -281,6 +281,36 @@ $ docker exec -it 39203d3aea67 bash
 					<h3>
 						Docker: Network
 					</h3>
+					<p>
+						Docker networking allows you to attach a container to as many networks as you like. 
+						You can also attach an already running container.<br />
+						There are three common Docker network types – 
+						bridge networks, used within a single host, overlay networks, 
+						for multi-host communication, and macvlan networks which are used to connect Docker 
+						containers directly to host network interfaces.
+					</p>
+					<img src="assets/network.png" width="400" />
+				</section>
+				<section>
+					<h3>
+						Network (cont.)
+					</h3>
+					<p>
+						Network commands:
+					</p>
+					<pre><code>
+# create network
+$ docker network create node-app-network
+
+# get a list of networks
+$ docker network ls
+
+# run a container on network
+$ docker run --network=node-app-network -d -p 80:80 nginx:latest
+
+# remove network
+$ docker network remove node-app-network
+					</code></pre>
 				</section>
 				<section>
 					<h3>
