@@ -52,7 +52,7 @@
 							Containers
 							<ul>
 								<li>
-									OS System level virtualization
+									OS level virtualization
 								</li>
 								<li>
 									History
@@ -106,12 +106,12 @@
 				</section>
 				<section>
 					<h3>
-						OS System level virtualization
+						OS level virtualization
 					</h3>
 					<p>
 						OS-level virtualization is a technology that partitions 
-						the operating system to create multiple isolated Virtual Machines (VM). 
-						An OS-level VM is a virtual execution environment that can be forked instantly 
+						the operating system to create multiple isolated containers. 
+						An OS-level container is a virtual execution environment that can be forked instantly 
 						from the base operating environment.
 					</p>
 					<table class="c-table">
@@ -136,7 +136,7 @@
 					<h3>
 						OS System level virtualization (cont.)
 					</h3>
-					<img src="assets/os-virtualization.png" width="500" />
+					<img src="assets/os-virtualization.png" width="600" />
 				</section>
 				<section>
 					<h3>
@@ -163,7 +163,12 @@
 						runtime environment from the host operating system and other 
 						processes running on the host.
 					</p>
-					<img src="assets/isolation.png" width="500" />
+				</section>
+				<section>
+					<h3>
+						Isolation (cont.)
+					</h3>
+					<img src="assets/isolation.png" width="650" />
 				</section>
 				<section>
 					<h3>
@@ -174,7 +179,12 @@
 						software and its dependencies in an isolated unit, called a container, 
 						which can run consistently in any environment.
 					</p>
-					<img src="assets/architecture.png" width="500" />
+				</section>
+				<section>
+					<h3>
+						Architecture (cont.)
+					</h3>
+					<img src="assets/architecture.png" width="650" />
 				</section>
 				<section>
 					<h3>
@@ -260,7 +270,7 @@ runc delete mycontainerid
 						Images are built as a series of layers. Layers are assembled on top of one another.
 						<span class="red-highlight">Layers can also be cached</span>.
 					</p>
-					<img src="assets/image.png" width="400" />
+					<img src="assets/image.png" width="450" />
 				</section>
 				<section>
 					<h3>
@@ -292,7 +302,7 @@ $ docker image remove amirhossein21/nginx:v0.1
 						includes everything needed to run an application: code, runtime, system tools, system libraries 
 						and settings.
 					</p>
-					<img src="assets/containers.jpeg" width="450" />
+					<img src="assets/containers.jpeg" width="550" />
 				</section>
 				<section>
 					<h3>
@@ -338,7 +348,12 @@ $ docker exec -it 39203d3aea67 bash
 						for multi-host communication, and macvlan networks which are used to connect Docker 
 						containers directly to host network interfaces.
 					</p>
-					<img src="assets/network.png" width="400" />
+				</section>
+				<section>
+					<h3>
+						Network (cont.)
+					</h3>
+					<img src="assets/network.png" width="600" />
 				</section>
 				<section>
 					<h3>
@@ -372,12 +387,20 @@ $ docker network remove node-app-network
 						Some use cases for volumes include: Sharing data among multiple running containers.
 						If you don't explicitly create it, a volume is created the first time it is mounted into a container.
 					</p>
-					<img src="assets/volume.png" width="400" />
 				</section>
 				<section>
 					<h3>
 						Volume (cont.)
 					</h3>
+					<img src="assets/volume.png" width="600" />
+				</section>
+				<section>
+					<h3>
+						Volume (cont.)
+					</h3>
+					<p>
+						Volume commands:
+					</p>
 					<pre><code>
 # create volume
 $ docker volume create redisvolume
