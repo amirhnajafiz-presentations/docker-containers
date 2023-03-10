@@ -347,6 +347,23 @@ $ docker volume remove redisvolume
 					<h3>
 						Dockerfile
 					</h3>
+					<p>
+						A Dockerfile is a text document that contains all the commands a user could call on 
+						the command line to assemble an image.
+					</p>
+					<pre><code>
+# select a base image
+FROM nginx
+
+# run a command
+RUN apt-get upgrade
+
+# execute commands
+COPY html /var/www/html
+
+# run a cmd command for container
+CMD bash
+					</code></pre>
 				</section>
 				<section>
 					<h3>
