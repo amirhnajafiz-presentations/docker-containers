@@ -327,6 +327,24 @@ $ docker network remove node-app-network
 				</section>
 				<section>
 					<h3>
+						Volume (cont.)
+					</h3>
+					<pre><code>
+# create volume
+$ docker volume create redisvolume
+
+# get a list of networks
+$ docker volume ls
+
+# run a container on network
+$ docker run -v redisvolume:/data redis:latest
+
+# remove network
+$ docker volume remove redisvolume
+					</code></pre>
+				</section>
+				<section>
+					<h3>
 						Dockerfile
 					</h3>
 				</section>
