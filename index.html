@@ -188,27 +188,64 @@ runc delete mycontainerid
 						Docker packages software into standardized units called containers that have everything 
 						the software needs to run including libraries, system tools, code, and runtime.
 					</p>
-					<img style="background-color: #fff;" src="assets/docker.svg" width="600" />
+					<img style="background-color: #fff; padding: 10px;" src="assets/docker.svg" width="550" />
 				</section>
 				<section>
 					<h3>
 						Docker: Image
 					</h3>
+					<p>
+						A Docker image is a read-only template that contains a set of 
+						instructions for creating a container that can run on the Docker platform.
+						An image is a file that represents a packaged application with all the 
+						dependencies needed to run correctly. 
+						In other words, we could say that a Docker image is like a Java class. 
+						Images are built as a series of layers. Layers are assembled on top of one another.
+					</p>
+					<img src="assets/image.png" width="400" />
 				</section>
 				<section>
 					<h3>
 						Docker: Image (cont.)
 					</h3>
+					<p>
+						Image commands:
+					</p>
+					<pre><code>
+# pull docker image
+$ docker pull nginx:latest
+
+# get a list of docker images
+$ docker image ls
+
+# build your docker image
+$ docker build . -t amirhossein21/nginx:v0.1
+
+# remove an image
+$ docker image remove amirhossein21/nginx:v0.1
+					</code></pre>
 				</section>
 				<section>
 					<h3>
 						Docker: Container
 					</h3>
+					<p>
+						A Docker container image is a lightweight, standalone, executable package of software that 
+						includes everything needed to run an application: code, runtime, system tools, system libraries 
+						and settings.
+					</p>
+					<img src="assets/containers.jpeg" width="400" />
 				</section>
 				<section>
 					<h3>
 						Docker: Container (cont.)
 					</h3>
+					<p>
+						The key difference between a Docker image Vs a container is that a Docker 
+						image is a read-only immutable template that defines how a container will be realized.<br />
+						A Docker container is a runtime instance of a Docker image that gets created 
+						when the $ docker run command is implemented.
+					</p>
 				</section>
 				<section>
 					<h3>
