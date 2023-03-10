@@ -159,8 +159,10 @@
 						RunC
 					</h3>
 					<p>
-						RunC is a CLI tool for spawning and running containers on Linux according to the OCI specification.
-						RunC is a universal container runtime created by Docker. View it on
+						RunC is a CLI tool for spawning and running containers on Linux according to the 
+						<span class="green-highlight">OCI specification</span>.
+						RunC is a universal container runtime created by <span class="blue-highlight">Docker
+						</span>. View it on
 						<a href="https://github.com/opencontainers/runc">
 							Github
 						</a>.
@@ -186,9 +188,15 @@ runc delete mycontainerid
 					<p>
 						Docker is a software platform that allows you to build, test, and deploy applications quickly. 
 						Docker packages software into standardized units called containers that have everything 
-						the software needs to run including libraries, system tools, code, and runtime.
+						the software needs to run including libraries, system tools, code, and runtime. Docker created
+						<span class="blue-highlight">RunC</span> in order to manage containers on a system.
 					</p>
-					<img style="background-color: #fff; padding: 10px;" src="assets/docker.svg" width="550" />
+				</section>
+				<section>
+					<h3>
+						Docker (cont.)
+					</h3>
+					<img style="background-color: #fff; padding: 10px;" src="assets/docker.svg" width="650" />
 				</section>
 				<section>
 					<h3>
@@ -197,10 +205,11 @@ runc delete mycontainerid
 					<p>
 						A Docker image is a read-only template that contains a set of 
 						instructions for creating a container that can run on the Docker platform.
-						An image is a file that represents a packaged application with all the 
-						dependencies needed to run correctly. 
+						An image is a <span class="green-highlight">file that represents a packaged application with all the 
+						dependencies needed to run correctly</span>. 
 						In other words, we could say that a Docker image is like a Java class. 
 						Images are built as a series of layers. Layers are assembled on top of one another.
+						<span class="red-highlight">Layers can also be cached</span>.
 					</p>
 					<img src="assets/image.png" width="400" />
 				</section>
@@ -234,17 +243,17 @@ $ docker image remove amirhossein21/nginx:v0.1
 						includes everything needed to run an application: code, runtime, system tools, system libraries 
 						and settings.
 					</p>
-					<img src="assets/containers.jpeg" width="400" />
+					<img src="assets/containers.jpeg" width="450" />
 				</section>
 				<section>
 					<h3>
 						Docker: Container (cont.)
 					</h3>
 					<p>
-						The key difference between a Docker image Vs a container is that a Docker 
+						The key difference between a Docker image and a container is that a Docker 
 						image is a read-only immutable template that defines how a container will be realized.<br />
 						A Docker container is a runtime instance of a Docker image that gets created 
-						when the $ docker run command is implemented.
+						when the <span class="blue-highlight">$ docker run command</span> is implemented.
 					</p>
 				</section>
 				<section>
