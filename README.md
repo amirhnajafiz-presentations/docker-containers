@@ -1,10 +1,7 @@
-<h1 align="center">
-    Docker and Containers
-</h1>
+# Docker and Containers
 
-<br />
-
-Cloud Computing presentation about Docker and Containers.
+Cloud Computing presentation about Docker and Containers. Teaching cloud computing students
+the concepts of containers and docker.
 
 - [Presentation slides](https://amirhossein-presentations.github.io/docker-containers/)
 - [Presentation examples](https://github.com/amirhossein-teaching/docker)
